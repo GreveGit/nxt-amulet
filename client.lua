@@ -16,7 +16,7 @@ end)
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(10000) -- Regenerate every 10 seconds
+        Citizen.Wait(10000) -- HoT vært 10 sekund, må kansje tweekes litt på
         for stat, data in pairs(Config.Stats) do
             if data.current < data.regenThreshold then
                 data.current = data.current + data.regenRate

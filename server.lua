@@ -2,6 +2,7 @@ QBCore = nil
 
 TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
 
+--Oppdatere stats til spilleren
 RegisterServerEvent('updatePlayerStat')
 AddEventHandler('updatePlayerStat', function(stat, value)
     local src = source
@@ -11,6 +12,8 @@ AddEventHandler('updatePlayerStat', function(stat, value)
     end
 end)
 
+
+-- Amuletter
 QBCore.Functions.CreateUseableItem('health_t1', function(source)
     TriggerClientEvent('ox_inventory:useItem', source, 'health_t1')
 end)
