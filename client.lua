@@ -1,3 +1,5 @@
+local QBCore = exports['qb-core']:GetCoreObject()
+
 local function applyItemEffect(item)
     local stat = Config.Items[item].stat
     local tier = Config.Items[item].tier

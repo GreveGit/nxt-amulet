@@ -1,6 +1,4 @@
-QBCore = nil
-
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+QBCore = exports['qb-core']:GetCoreObject()
 
 --Oppdatere stats til spilleren
 RegisterServerEvent('updatePlayerStat')
